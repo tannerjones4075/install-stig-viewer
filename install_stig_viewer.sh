@@ -95,8 +95,8 @@ install_stigviewer() {
 # Show launch instructions
 launch_stigviewer() {
   header "Installation complete"
-  echo "To run STIG Viewer, execute:"
-  echo "/opt/stigviewer/STIG\\ Viewer\\ 3"
+  echo "To run STIG Viewer, execute from /opt/stigviewer:"
+  echo "./STIGViewer"
 }
 
 # MAIN
