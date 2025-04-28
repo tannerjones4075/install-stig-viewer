@@ -11,10 +11,8 @@ These scripts automate the installation of different versions of STIG Viewer on 
 Please verify the scripts before running them on your machine! 
 
 ### Offocial Documentation
-https://public.cyber.mil/stigs/srg-stig-tools/
-https://dl.dod.cyber.mil/wp-content/uploads/stigs/pdf/U_STIG_Viewer_3-x_User_Guide_V1R5.pdf
-
-
+- https://public.cyber.mil/stigs/srg-stig-tools/
+- https://dl.dod.cyber.mil/wp-content/uploads/stigs/pdf/U_STIG_Viewer_3-x_User_Guide_V1R5.pdf
 
 ## Prerequisites
 
