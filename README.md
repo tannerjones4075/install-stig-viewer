@@ -27,12 +27,12 @@ Please verify the scripts before running them on your machine!
 ### STIG Viewer 3.5.1
 - Script: `install_stig_viewer_3.5.1.sh`
 - Installs STIG Viewer version 3.5.1
-- Installation directory: `/opt/stigviewer`
+- Installation directory: `/etc/stigviewer`
 
 ### STIG Viewer 2.18
 - Script: `install_stig_viewer_2.18.sh`
 - Installs STIG Viewer version 2.18
-- Installation directory: `/opt/stigviewer`
+- Installation directory: `/etc/stigviewer`
 
 ## Installation
 
@@ -53,7 +53,7 @@ Please verify the scripts before running them on your machine!
 The scripts will:
 - Download the STIG Viewer package and its checksum file
 - Verify the package integrity using SHA256 checksum
-- Install STIG Viewer to `/opt/stigviewer`
+- Install STIG Viewer to `/etc/stigviewer`
 - Add STIG Viewer to the fapolicyd trust database (if applicable)
 
 ## Running STIG Viewer
