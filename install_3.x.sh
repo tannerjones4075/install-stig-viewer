@@ -7,7 +7,7 @@ STIG_ZIP="U_STIGViewer-linux_x64-${STIG_VERSION}.zip"
 ZIP_URL="https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/${STIG_ZIP}"
 HASH_FILE="U_STIGViewer_${STIG_VERSION}_Hashes.txt"
 HASH_URL="https://dl.dod.cyber.mil/wp-content/uploads/stigs/txt/${HASH_FILE}"
-INSTALL_DIR="/opt/stigviewer"
+INSTALL_DIR="/etc/stigviewer" # change where you want to install the STIG Viewer
 
 # FUNCTION: Print a header
 header() {
@@ -87,9 +87,11 @@ install_stigviewer() {
   extracted_dir=$(find /opt -maxdepth 1 -type d -name "stig_viewer_*" | head -n 1)
   sudo mv "$extracted_dir" "$INSTALL_DIR"
 
-  header "Adding STIG Viewer to fapolicyd trust database"
-  sudo fapolicyd-cli --file add "$INSTALL_DIR"
-  sudo fapolicyd-cli --update
+  # Add STIG Viewer to fapolicyd trust database (IN NEEDED)
+
+  # header "Adding STIG Viewer to fapolicyd trust database"
+  # sudo fapolicyd-cli --file add "$INSTALL_DIR"
+  # sudo fapolicyd-cli --update
 }
 
 # Show launch instructions
